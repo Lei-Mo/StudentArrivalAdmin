@@ -1,13 +1,16 @@
 server:
   port: 8090
 spring:
+  profiles:
+    active: dev
   main:
     allow-circular-references: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://120.46.211.213:3306/chinasoft
-    username: root
-    password: zhongruanguoji
+    url: ${sql.url}
+    username: ${sql.username}
+    password: ${sql.password}
+
 
 mybatis-plus:
   configuration:
