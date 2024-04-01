@@ -2,6 +2,9 @@ package com.chinasoft.studentarrivaladmin.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.chinasoft.studentarrivaladmin.model.entity.Student;
+import com.chinasoft.studentarrivaladmin.model.request.ArrivalSubmitRequest;
+import com.chinasoft.studentarrivaladmin.model.request.LoginRequest;
+import com.chinasoft.studentarrivaladmin.model.result.Result;
 
 /**
  * @author 86178
@@ -10,4 +13,7 @@ import com.chinasoft.studentarrivaladmin.model.entity.Student;
  */
 public interface StudentService extends IService<Student> {
 
+    Result studentLogin(LoginRequest loginRequest);
+
+    Result arrivalSubmit(ArrivalSubmitRequest arrivalSubmitRequest);
 }
