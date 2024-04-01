@@ -15,7 +15,7 @@ import java.util.Date;
 @Data
 public class Student implements Serializable {
     /**
-     *
+     *123456
      */
     @TableId
     private Long studentId;
