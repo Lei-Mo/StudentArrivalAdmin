@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.chinasoft.studentarrivaladmin.mapper.StudentMapper">
+
+    <resultMap id="BaseResultMap" type="com.chinasoft.studentarrivaladmin.entity.Student">
+        <id property="studentId" column="studentId" jdbcType="BIGINT"/>
+        <result property="college" column="college" jdbcType="VARCHAR"/>
+        <result property="name" column="name" jdbcType="VARCHAR"/>
+        <result property="gender" column="gender" jdbcType="VARCHAR"/>
+        <result property="politicalStatus" column="politicalStatus" jdbcType="VARCHAR"/>
+        <result property="major" column="major" jdbcType="VARCHAR"/>
+        <result property="clazz" column="clazz" jdbcType="VARCHAR"/>
+        <result property="candidateId" column="candidateId" jdbcType="VARCHAR"/>
+        <result property="cardId" column="cardId" jdbcType="VARCHAR"/>
+        <result property="birthday" column="birthday" jdbcType="DATE"/>
+        <result property="nation" column="nation" jdbcType="VARCHAR"/>
+        <result property="dormitoryId" column="dormitoryId" jdbcType="VARCHAR"/>
+        <result property="graduatedSchool" column="graduatedSchool" jdbcType="VARCHAR"/>
+        <result property="graduatedClass" column="graduatedClass" jdbcType="VARCHAR"/>
+        <result property="candidateType" column="candidateType" jdbcType="VARCHAR"/>
+        <result property="note" column="note" jdbcType="VARCHAR"/>
+        <result property="isArrived" column="isArrived" jdbcType="INTEGER"/>
+        <result property="fromAddr" column="fromAddr" jdbcType="VARCHAR"/>
+        <result property="message" column="message" jdbcType="VARCHAR"/>
+        <result property="arriveTime" column="arriveTime" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        studentId,college,name,
+        gender,politicalStatus,major,
+        clazz,candidateId,cardId,
+        birthday,nation,dormitoryId,
+        graduatedSchool,graduatedClass,candidateType,
+        note,isArrived,fromAddr,
+        message,arriveTime
+    </sql>
+</mapper>
