@@ -1,7 +1,7 @@
 package com.chinasoft.studentarrivaladmin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
-import com.chinasoft.studentarrivaladmin.entity.Student;
+import com.chinasoft.studentarrivaladmin.model.entity.Student;
 import org.apache.ibatis.annotations.Mapper;
 
 /**

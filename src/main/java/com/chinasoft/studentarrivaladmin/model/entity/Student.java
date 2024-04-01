@@ -1,4 +1,4 @@
-package com.chinasoft.studentarrivaladmin.entity;
+package com.chinasoft.studentarrivaladmin.model.entity;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
@@ -15,7 +15,7 @@ import java.util.Date;
 @Data
 public class Student implements Serializable {
     /**
-     *123456
+     *
      */
     @TableId
     private Long studentId;

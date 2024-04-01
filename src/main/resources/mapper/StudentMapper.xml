@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.chinasoft.studentarrivaladmin.mapper.StudentMapper">
 
-    <resultMap id="BaseResultMap" type="com.chinasoft.studentarrivaladmin.entity.Student">
+    <resultMap id="BaseResultMap" type="com.chinasoft.studentarrivaladmin.model.entity.Student">
         <id property="studentId" column="studentId" jdbcType="BIGINT"/>
         <result property="college" column="college" jdbcType="VARCHAR"/>
         <result property="name" column="name" jdbcType="VARCHAR"/>
