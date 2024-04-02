@@ -2,7 +2,10 @@ package com.chinasoft.studentarrivaladmin.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.chinasoft.studentarrivaladmin.model.entity.Student;
+import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Mapper;
+
+import java.util.Map;
 
 /**
  * @author 86178
@@ -13,6 +16,11 @@ import org.apache.ibatis.annotations.Mapper;
 @Mapper
 public interface StudentMapper extends BaseMapper<Student> {
 
+    @MapKey("fromAddr")
+    Map<String, Long> getFromAddrCount();
+
+    @MapKey("candidateType")
+    Map getCandidateTypeCount();
 }
 
 

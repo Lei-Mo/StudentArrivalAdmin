@@ -40,4 +40,5 @@ public class StudentArrivalController {
         return studentService.arrivalSubmit(arrivalSubmitRequest);
     }
 
+
 }

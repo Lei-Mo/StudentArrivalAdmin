@@ -36,4 +36,14 @@
         note,isArrived,fromAddr,
         message,arriveTime
     </sql>
+    <select id="getFromAddrCount" resultType="java.util.Map">
+        select fromAddr, count(*) as count
+        from student
+        group by fromAddr;
+    </select>
+    <select id="getCandidateTypeCount" resultType="java.util.Map">
+        select candidateType, count(*) as count
+        from student
+        group by candidateType;
+    </select>
 </mapper>

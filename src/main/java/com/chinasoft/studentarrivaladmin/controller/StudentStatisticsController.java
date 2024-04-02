@@ -50,4 +50,29 @@ public class StudentStatisticsController {
         // 返回响应
         return result;
     }
+
+
+    /**
+     * 获取不同起始地的数量
+     */
+    @GetMapping("/getFromAddrCount")
+    public Result getFromAddrCount() {
+        Result result = arriveReportService.getFromAddrCount();
+
+        return result;
+    }
+
+    @GetMapping("/getAllStudentInfo")
+    public Result getAllStudentInfo() {
+        Result result = new Result();
+        result.setData(arriveReportService.list());
+        result.setCode(HttpStatus.OK.value());
+        return result;
+    }
+
+    @GetMapping("/getCandidateTypeCount")
+    public Result getCandidateTypeCount() {
+        return arriveReportService.getCandidateTypeCount();
+    }
+
 }
